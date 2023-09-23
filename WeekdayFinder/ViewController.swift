@@ -19,5 +19,12 @@ class ViewController: UIViewController {
     @IBAction func findDay() {
         
     }
+    
+    // данный метод определяет, что будет происходить, когда мы будем прикасаться к экрану (точнее к данному ViewController-у)
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.view.endEditing(true)
+    }
 }
 
